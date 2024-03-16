@@ -1,0 +1,13 @@
+Command used to run container:
+
+docker run -it ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+
+
+Commands in a different terminal used to install missing dependency:
+
+docker run exec <container> apt-get update
+docker run exec <container> apt-get -y install curl
+
+
+After these the curl now works and shows the html.
+
