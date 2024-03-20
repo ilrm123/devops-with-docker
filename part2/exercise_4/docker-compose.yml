@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  cache:
+    image: redis
+    restart: unless-stopped
+  backend:
+    image: example-backend
+    ports:
+      - 8080:8080
+    environment:
+      - REQUEST_ORIGIN=http://localhost:5000
+      - REDIS_HOST=cache
+    build: ../material-applications/example-backend
+    depends_on:
+      - cache
+  frontend:
+    image: example-frontend
+    ports:
+      - 5000:5000
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
+    build: ../material-applications/example-frontend
+

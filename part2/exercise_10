@@ -1,0 +1,1 @@
+I managed to stop the ports from publishing by removing the "ports" configurations from the backend and frontend services in the docker-compose.yml, as well as removing the REACT_APP_BACKEND_URL environment variable. I also changed the backend and frontend dockerfiles to use http://localhost/api as the default url. 

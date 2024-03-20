@@ -1,0 +1,1 @@
+I changed the REQUEST_ORIGIN in both the docker-compose.yml and the Dockerfile to "http://localhost" from the previously used "http://localhost:5000"
