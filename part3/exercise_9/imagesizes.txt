@@ -1,0 +1,3 @@
+Backend before changes: 479MB
+
+Backend after changes: 19.1MB

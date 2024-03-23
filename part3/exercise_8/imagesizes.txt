@@ -1,0 +1,4 @@
+Frontend before changes: 480MB
+
+Frontend after changes: 129MB
+

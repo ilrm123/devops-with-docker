@@ -1,0 +1,3 @@
+The command used to run the script is 
+
+docker run -e DOCKER_USER=<username> -e DOCKER_PWD=<password> -e REPO_OWNER=<git_repo_owner> -e REPO_NAME=<git_repo_name> -e HUB_IMAGE=<image_to_create_into_hub> -v /var/run/docker.sock:/var/run/docker.sock exercise4

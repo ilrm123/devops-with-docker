@@ -1,0 +1,5 @@
+Frontend before changes: 1.27GB
+Backend before changes: 1.07GB
+
+Frontend after changes: 1.27GB
+Backend after changes: 1.07GB
